@@ -1,7 +1,8 @@
 game.StarterGui:SetCore("SendNotification", {
          Title = "Fun fact!";
          Text = "you can't follow the simple tutorial";
-          Duration = "10";
+         Duration = "10";
+})
 repeat task.wait() until game:IsLoaded() == true
 local injected = true
 local oldrainbow = false
