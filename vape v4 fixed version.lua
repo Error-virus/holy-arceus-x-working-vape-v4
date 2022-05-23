@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
-         Title = "Did you know? ";
-         Text = "subscribing jn hh and shuttle gives you luck charm";
+         Title = "bruh moment ";
+         Text = "i get warned on night bed very gay";
          Duration = "20";
 })
 repeat task.wait() until game:IsLoaded() == true
