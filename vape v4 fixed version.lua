@@ -1,13 +1,7 @@
 game.StarterGui:SetCore("SendNotification", {
          Title = "Fun fact!";
          Text = "you can't follow the simple tutorial";
-          Duration = "5";
-})
-game.StarterGui:SetCore("SendNotification", {
-         Title = "credit or else i stole your nuggie";
-         Text = "Do it now";
-          Duration = "5";
-}) 
+          Duration = "10";
 repeat task.wait() until game:IsLoaded() == true
 local injected = true
 local oldrainbow = false
@@ -64,9 +58,6 @@ if isfolder(customdir:gsub("/", "")) == false then
 end
 if isfolder("vape") == false then
 	makefolder("vape")
-end
-if not betterisfile("vape/assetsversion.dat") then
-	writefile("vape/assetsversion.dat", "14")
 end
 if isfolder(customdir.."CustomModules") == false then
 	makefolder(customdir.."CustomModules")
