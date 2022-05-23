@@ -1,7 +1,7 @@
 game.StarterGui:SetCore("SendNotification", {
-         Title = "Fun fact!";
-         Text = "you can't follow the simple tutorial";
-         Duration = "10";
+         Title = "Did you know? ";
+         Text = "subscribing jn hh and shuttle gives you luck charm";
+         Duration = "20";
 })
 repeat task.wait() until game:IsLoaded() == true
 local injected = true
