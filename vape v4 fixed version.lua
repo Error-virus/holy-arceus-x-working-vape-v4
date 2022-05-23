@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
          Title = "Fun fact!";
-         Text = "You waiting someone to fix vape";
+         Text = "you can't follow the simple tutorial";
           Duration = "5";
 })
 game.StarterGui:SetCore("SendNotification", {
