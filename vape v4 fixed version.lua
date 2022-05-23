@@ -3,7 +3,7 @@ game.StarterGui:SetCore("SendNotification", {
          Text = "you can't follow the simple tutorial";
          Duration = "10";
 })
-repeat task.wait() until game:IsLoaded() == true
+-repeat task.wait() until game:IsLoaded() == true
 local injected = true
 local oldrainbow = false
 local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
