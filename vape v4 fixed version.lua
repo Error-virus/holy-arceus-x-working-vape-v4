@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
-         Title = "bruh moment ";
-         Text = "i get warned on night bed very gay";
+         Title = "fact! ";
+         Text = "lyt gay";
          Duration = "20";
 })
 repeat task.wait() until game:IsLoaded() == true
