@@ -129,10 +129,6 @@ local function getcustomassetfunc(path)
 			repeat task.wait() until betterisfile(path)
 			textlabel:Remove()
 		end)
-		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
-			Method = "GET"
-		})
 		writefile(path, req.Body)
 	end
 	return getasset(path) 
