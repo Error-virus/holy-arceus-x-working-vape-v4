@@ -1,6 +1,6 @@
 game.StarterGui:SetCore("SendNotification", {
-         Title = "vape don't work? ";
-         Text = "dm me grass#3847";
+         Title = "Modified by: Shuttle";
+         Text = "if you don't give credits im gonna bang your mom";
          Duration = "20";
 })
 repeat task.wait() until game:IsLoaded() == true
