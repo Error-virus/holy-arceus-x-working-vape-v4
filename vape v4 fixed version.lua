@@ -1,4 +1,11 @@
-        repeat task.wait() until game:IsLoaded() == true
+   pcall(function()  
+game.StarterGui:SetCore("SendNotification", {
+Title = "Oh no!";
+Text = "NTD got mad vape maintenance";
+Duration = "30";
+})
+end)
+repeat task.wait() until game:IsLoaded() == true
 local injected = true
 local oldrainbow = false
 local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
@@ -16,6 +23,7 @@ local function GetURL(scripturl)
 		local res = game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..scripturl, true)
 		assert(res ~= "404: Not Found", "File not found")
 		return res
+if shared.VapePrivate == true then vapepri() end
 	end
 end
 local getasset = getsynasset or getcustomasset or function(location) return "rbxasset://"..location end
