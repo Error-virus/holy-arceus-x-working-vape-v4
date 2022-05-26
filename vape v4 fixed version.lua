@@ -1,4 +1,4 @@
-   pcall(function()  
+   spawn(function()  
 game.StarterGui:SetCore("SendNotification", {
 Title = "Oh no!";
 Text = "NTD got mad vape maintenance";
