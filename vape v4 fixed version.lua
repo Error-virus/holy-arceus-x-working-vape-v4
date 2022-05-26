@@ -1,9 +1,4 @@
-game.StarterGui:SetCore("SendNotification", {
-         Title = "Modified by: Shuttle";
-         Text = "if you don't give credits im gonna bang your mom";
-         Duration = "20";
-})
-repeat task.wait() until game:IsLoaded() == true
+        repeat task.wait() until game:IsLoaded() == true
 local injected = true
 local oldrainbow = false
 local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
@@ -23,7 +18,6 @@ local function GetURL(scripturl)
 		return res
 	end
 end
-
 local getasset = getsynasset or getcustomasset or function(location) return "rbxasset://"..location end
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport or function() end
 local requestfunc = syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or request or function(tab)
