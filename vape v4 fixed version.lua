@@ -23,7 +23,7 @@ local function GetURL(scripturl)
 		return res
 	end
 end
-if VapeV4ForRoblox == "missing" then
+if limitless == "kissing my balls" then
 return false
 local getasset = getsynasset or getcustomasset or function(location) return "rbxasset://"..location end
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport or function() end
