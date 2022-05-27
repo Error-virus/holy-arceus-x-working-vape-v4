@@ -4,8 +4,8 @@ Text = "Canceled";
 Duration = 30;
 }) 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Announcement";
-Text = "syctro im big fan";
+Title = "vape broke?";
+Text = "dm my assistant Syctro#0296";
 Duration = 30;
 }) 
         repeat task.wait() until game:IsLoaded() == true
