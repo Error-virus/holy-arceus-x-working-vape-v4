@@ -1,7 +1,7 @@
         
 game.StarterGui:SetCore("SendNotification", {
-Title = "Testing";
-Text = " testing if it's working";
+Title = "Last update";
+Text = "";
 Duration = 30;
 })
 
