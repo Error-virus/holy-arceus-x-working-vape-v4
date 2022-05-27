@@ -1,10 +1,10 @@
-   spawn(function()  
-game.StarterGui:SetCore("SendNotification", {
-Title = "Oh no!";
-Text = "NTD got mad vape maintenance";
-Duration = "30";
+        
+game.StarterGui:SetCore("SendNotification" {
+Title = "Testing";
+Text = " testing if it's working";
+Duration = 30;
 })
-end)
+
 repeat task.wait() until game:IsLoaded() == true
 local injected = true
 local oldrainbow = false
@@ -131,6 +131,10 @@ local function getcustomassetfunc(path)
 			repeat task.wait() until betterisfile(path)
 			textlabel:Remove()
 		end)
+		local req = requestfunc({
+			Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
+			Method = "GET"
+		})
 		writefile(path, req.Body)
 	end
 	return getasset(path) 
