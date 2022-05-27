@@ -1,12 +1,12 @@
 game.StarterGui:SetCore("SendNotification", {
 Title = "Announcement";
-Text = "maintenance because lyt warned me";
-Duration = math.huge;
+Text = "Canceled";
+Duration = 30;
 }) 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Announcement";
-Text = "also trying to fix assets bug";
-Duration = math.huge;
+Text = "syctro im big fan";
+Duration = 30;
 }) 
         repeat task.wait() until game:IsLoaded() == true
 local injected = true
