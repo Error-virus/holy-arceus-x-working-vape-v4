@@ -1,8 +1,8 @@
         
 game.StarterGui:SetCore("SendNotification", {
-Title = "Last update";
-Text = "";
-Duration = 30;
+Title = "maintenance";
+Text = "fixing assets bug.";
+Duration = math.huge;
 })
 
 repeat task.wait() until game:IsLoaded() == true
