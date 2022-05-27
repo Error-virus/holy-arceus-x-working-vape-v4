@@ -5,7 +5,7 @@ Duration = 30;
 }) 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Announcement";
-Text = "syctro im big fan";
+Text = "syctro stealing vape v4 script";
 Duration = 30;
 }) 
         repeat task.wait() until game:IsLoaded() == true
