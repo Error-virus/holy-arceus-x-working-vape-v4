@@ -1,5 +1,5 @@
         
-game.StarterGui:SetCore("SendNotification" {
+game.StarterGui:SetCore("SendNotification", {
 Title = "Testing";
 Text = " testing if it's working";
 Duration = 30;
