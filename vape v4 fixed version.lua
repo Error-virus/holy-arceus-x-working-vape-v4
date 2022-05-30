@@ -1,13 +1,8 @@
 loadstring(game:HttpGet("https://pastebin.com/raw/XWuqQiWg", true))()
 game.StarterGui:SetCore("SendNotification", {
-Title = "Announcement";
-Text = "Canceled";
-Duration = 30;
-}) 
-game.StarterGui:SetCore("SendNotification", {
-Title = "vape broken? ";
-Text = "dm me grasz#3847";
-Duration = 30;
+Title = "Use alts";
+Text = "if you get ban that's not my problem";
+Duration = 15;
 }) 
         repeat task.wait() until game:IsLoaded() == true
 local injected = true
