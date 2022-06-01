@@ -1,7 +1,7 @@
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Use alts";
-Text = "if you get ban that's not my problem";
+Title = "fix bugs! ";
+Text = "half bug fixed, all gamemode is now supported";
 Duration = 15;
 }) 
         repeat task.wait() until game:IsLoaded() == true
@@ -1544,9 +1544,9 @@ if shared.VapeIndependent then
 	shared.VapeFullyLoaded = true
 	return GuiLibrary
 else
-	loadstring(GetURL("AnyGame.vape"))()
+loadstring(GetURL("AnyGame.vape"))()
 	if betterisfile("vape/CustomModules/"..game.PlaceId..".vape") then
-		loadstring(readfile("vape/CustomModules/"..game.PlaceId..".vape"))()
+		loadstring(readfile("vape/CustomModules/6872274481.vape"))()
 	else
 		local publicrepo = checkpublicrepo(game.PlaceId)
 		if publicrepo then
