@@ -1,10 +1,11 @@
-
+   
 game.StarterGui:SetCore("SendNotification", {
-Title = "fix bugs! ";
-Text = "half bug fixed, all gamemode is now supported";
+Title = "Announcement";
+Text = "All bugs is now fixed" ;
 Duration = 15;
-}) 
-        repeat task.wait() until game:IsLoaded() == true
+})
+
+
 local injected = true
 local oldrainbow = false
 local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
@@ -53,6 +54,10 @@ if shared.VapeExecuted then
 	return
 else
 	shared.VapeExecuted = true
+end
+
+if not betterisfile("vape/assetsversion.dat") then
+	writefile("vape/assetsversion.dat", "14")
 end
 
 if isfolder(customdir:gsub("/", "")) == false then
@@ -119,7 +124,7 @@ local function getcustomassetfunc(path)
 		spawn(function()
 			local textlabel = Instance.new("TextLabel")
 			textlabel.Size = UDim2.new(1, 0, 0, 36)
-			textlabel.Text = "Downloading "..path
+			textlabel.Text = "Error on "..path
 			textlabel.BackgroundTransparency = 1
 			textlabel.TextStrokeTransparency = 0
 			textlabel.TextSize = 30
@@ -131,7 +136,7 @@ local function getcustomassetfunc(path)
 			textlabel:Remove()
 		end)
 		local req = requestfunc({
-			Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
+			Url = "https://raw.githubusercontent.com/Error-virus/holy-arceus-x-working-vape-v4/main/"..path:gsub("vape/assets", "assets"),
 			Method = "GET"
 		})
 		writefile(path, req.Body)
@@ -1544,7 +1549,8 @@ if shared.VapeIndependent then
 	shared.VapeFullyLoaded = true
 	return GuiLibrary
 else
-loadstring(GetURL("AnyGame.vape"))()
+wait(0.1)
+	loadstring(GetURL("AnyGame.vape"))()
 	if betterisfile("vape/CustomModules/"..game.PlaceId..".vape") then
 		loadstring(readfile("vape/CustomModules/6872274481.vape"))()
 	else
