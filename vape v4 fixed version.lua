@@ -1,5 +1,5 @@
 local function callback(text)
-    if text == "Ok" then
+    if text == "Yes" then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     elseif text == "Decline" then
         return
@@ -9,10 +9,10 @@ local bindableFunction = Instance.new("BindableFunction")
 bindableFunction.OnInvoke = callback
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Alert!";
-Text = "Use alt right now due of bedwars using contentprovider to detect gui";
+Title = "Hey!";
+Text = "are you using alt?";
 Callback = bindableFunction;
-Button1 = "Ok";
+Button1 = "Yes";
 Button2 = "Decline";
 Duration = math.huge;
 }) 
